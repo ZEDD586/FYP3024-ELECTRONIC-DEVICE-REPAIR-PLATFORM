@@ -1,0 +1,10 @@
+php_value display_errors Off
+php_value mbstring.http_input auto
+php_value date.timezone America/New_York
+Options -Indexes
+<FilesMatch "^(database.sql|README.md)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^(config|includes)$">
+  Require all denied
+</FilesMatch>
